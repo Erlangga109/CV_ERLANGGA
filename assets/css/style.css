@@ -1,0 +1,104 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Variabel Warna */
+:root {
+    --primary-color: #00A97F; /* Sebuah warna hijau toska */
+    --secondary-color: #343a40; /* Abu-abu gelap */
+    --light-color: #f8f9fa;   /* Putih pudar */
+    --dark-color: #212529;    /* Hitam pudar */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* Kustomisasi Navbar */
+.navbar-dark {
+    background-color: var(--dark-color) !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Kustomisasi Tombol */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #008765; /* Warna sedikit lebih gelap saat disentuh */
+    border-color: #008765;
+    transform: translateY(-2px); /* Efek sedikit terangkat */
+}
+
+/* Kustomisasi Kartu (Card) */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.card-header {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Foto Profil */
+.rounded-circle {
+    border: 5px solid var(--light-color) !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color) !important;
+}
+
+/* Animasi Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section Gradient */
+.hero-section {
+    background: linear-gradient(45deg, #212529, #343a40);
+    color: var(--light-color);
+    padding: 60px 0;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+/* Typed.js Cursor */
+.typed-cursor {
+    color: var(--primary-color);
+}
